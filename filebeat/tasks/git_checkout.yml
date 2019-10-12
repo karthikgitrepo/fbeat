@@ -1,0 +1,5 @@
+- name: git checkout
+  git:
+    repo: https://github.com/karthikgitrepo/beats-test.git
+    dest: /usr/local/beats-test
+    refspec: '+refs/pull/*:refs/heads/*'

@@ -1,0 +1,4 @@
+- include: git_checkout.yml
+- include: filebeat_install.yml
+- include: filebeat_config.yml
+      

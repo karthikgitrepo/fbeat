@@ -1,0 +1,13 @@
+- name: Elasticsearch configuration
+  template: 
+    src=/usr/local/beats-test/filebeat.yml.bk
+    dest=/etc/filebeat/filebeat.yml
+    owner=root
+    group=root
+    mode=0600
+
+- name: Enable filebeat service
+  service:
+    name=filebeat
+    enabled=yes
+    state=started
