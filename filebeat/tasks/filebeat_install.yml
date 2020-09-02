@@ -5,7 +5,7 @@
 
 - name: Enable filebeat repo
   template:
-    src=elastic-beats_repo.j2
+    src=elastic-beats.repo.j2
     dest=/etc/yum.repos.d/elastic-beats.repo
 
 - name: Install filebeat
